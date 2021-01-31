@@ -24,5 +24,4 @@ $form.addEventListener("submit", (evt) => {
     if ($paragraph.innerHTML.length < 1) {
         $paragraph.innerHTML = 'Enviado'
     }
-    console.log($paragraph);
 })
