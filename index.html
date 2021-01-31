@@ -10,17 +10,23 @@
     <div class="login-box">
         <img class="avatar" src="img/avatar.png" alt="Logo">
         <h1>Login Here</h1>
-        <form>
+        <form action="" method="POST" id="form">
             <!-- Username input -->
-            <label>Username</label>
-            <input class="input-text" type="text" placeholder="Enter Username">
+            <label for="name-user">Username</label>
+            <input id="name-user" name="name-user" class="input-text" type="text" required placeholder="Enter Username">
+            <!-- Email input -->
+            <label for="email">Email</label>
+            <input id="email" name="email" class="input-text" type="email" required placeholder="Enter Username">
             <!-- Password input -->
-            <label>Password</label>
-            <input class="input-password" type="password" placeholder="Enter Password">
-            <input class="input-submit" type="submit" value="Log In">
+            <label for="password">Password</label>
+            <input name="password" id="password" class="input-password" type="password" required placeholder="Enter Password">
+            <p id="message"></p>
+            <input id="btn-submit" class="input-submit" type="submit" value="Log In">
             <a href="#">Lost your password?</a>
             <a href="#">Don't have an account</a>
         </form>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

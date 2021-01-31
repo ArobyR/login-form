@@ -3,16 +3,19 @@
     margin: 0;
 }
 
-body {
-    background: url(./img/bg.jpg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
+html {
+    height: 100vh;
     height: 100vh;
 }
 
+body {
+    background: url(./img/background.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
 .login-box {
-    width: 320px;
-    height: 420px;
+    width: 340px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -21,6 +24,7 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    max-height: 600px;
 }
 
 .login-box .avatar {
@@ -60,7 +64,7 @@ body {
 }
 
 .input-text:focus, .input-password:focus {
-    border-bottom: 1px solid #B33121;
+    border-bottom: 1px solid #c00000;
 }
 
 .input-submit {
@@ -68,9 +72,9 @@ body {
     outline: none;
     border-radius: 20px;
     font-size: 18px;
-    height: 40px;
+    height: 50px;
     color: #fff;
-    background:#B33121;
+    background:#c00000;
 }
 
 .input-submit:hover {
@@ -94,8 +98,14 @@ body {
     color: #fff;
 }
 
-@media only screen and (min-width: 550px) {
+#message {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 560px) {
     .login-box {
-        width: 350px;
+        margin-top: 20%;
+
     }
 }
